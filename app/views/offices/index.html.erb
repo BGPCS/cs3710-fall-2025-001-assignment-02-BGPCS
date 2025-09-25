@@ -1,0 +1,6 @@
+<% @offices.each do |office| %>
+  <tr>
+    <td><%= office.number %></td>
+    <td><%= office.employee.name %></td>
+  </tr>
+<% end %>
