@@ -1,70 +1,62 @@
 class EmployeesController < ApplicationController
-  before_action :set_employee, only: %i[ show edit update destroy ]
+  before_action :set_employee, only: %i[show edit update destroy]
 
-  # GET /employees or /employees.json
+  # GET /employees
   def index
-    @employees = Employee.all
+    @employees = Employee.includes(:office).all
   end
 
-  # GET /employees/1 or /employees/1.json
+  # GET /employees/1
   def show
   end
 
   # GET /employees/new
   def new
     @employee = Employee.new
+    @employee.build_office
   end
 
   # GET /employees/1/edit
   def edit
+    @employee.build_office unless @employee.office
   end
 
-  # POST /employees or /employees.json
+  # POST /employees
   def create
     @employee = Employee.new(employee_params)
 
-    respond_to do |format|
-      if @employee.save
-        format.html { redirect_to @employee, notice: "Employee was successfully created." }
-        format.json { render :show, status: :created, location: @employee }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @employee.errors, status: :unprocessable_entity }
-      end
+    if @employee.save
+      redirect_to @employee, notice: "Employee was successfully created."
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
-  # PATCH/PUT /employees/1 or /employees/1.json
+  # PATCH/PUT /employees/1
   def update
-    respond_to do |format|
-      if @employee.update(employee_params)
-        format.html { redirect_to @employee, notice: "Employee was successfully updated.", status: :see_other }
-        format.json { render :show, status: :ok, location: @employee }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @employee.errors, status: :unprocessable_entity }
-      end
+    if @employee.update(employee_params)
+      redirect_to @employee, notice: "Employee was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
 
-  # DELETE /employees/1 or /employees/1.json
+  # DELETE /employees/1
   def destroy
-    @employee.destroy!
-
-    respond_to do |format|
-      format.html { redirect_to employees_path, notice: "Employee was successfully destroyed.", status: :see_other }
-      format.json { head :no_content }
-    end
+    @employee.destroy
+    redirect_to employees_url, notice: "Employee was successfully destroyed."
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_employee
-      @employee = Employee.find(params.expect(:id))
-    end
 
-    # Only allow a list of trusted parameters through.
-    def employee_params
-      params.expect(employee: [ :name ])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_employee
+    @employee = Employee.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def employee_params
+    params.require(:employee).permit(:name, office_attributes: [:id, :number])
+  end
 end
+

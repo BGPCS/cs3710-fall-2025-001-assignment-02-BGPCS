@@ -1,12 +1,12 @@
 class OfficesController < ApplicationController
-  before_action :set_office, only: %i[ show edit update destroy ]
+  before_action :set_office, only: %i[show edit update destroy]
 
-  # GET /offices or /offices.json
+  # GET /offices
   def index
-    @offices = Office.all
+    @offices = Office.includes(:employee).all
   end
 
-  # GET /offices/1 or /offices/1.json
+  # GET /offices/1
   def show
   end
 
@@ -19,52 +19,40 @@ class OfficesController < ApplicationController
   def edit
   end
 
-  # POST /offices or /offices.json
+  # POST /offices
   def create
     @office = Office.new(office_params)
 
-    respond_to do |format|
-      if @office.save
-        format.html { redirect_to @office, notice: "Office was successfully created." }
-        format.json { render :show, status: :created, location: @office }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @office.errors, status: :unprocessable_entity }
-      end
+    if @office.save
+      redirect_to @office, notice: "Office was successfully created."
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
-  # PATCH/PUT /offices/1 or /offices/1.json
+  # PATCH/PUT /offices/1
   def update
-    respond_to do |format|
-      if @office.update(office_params)
-        format.html { redirect_to @office, notice: "Office was successfully updated.", status: :see_other }
-        format.json { render :show, status: :ok, location: @office }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @office.errors, status: :unprocessable_entity }
-      end
+    if @office.update(office_params)
+      redirect_to @office, notice: "Office was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
 
-  # DELETE /offices/1 or /offices/1.json
+  # DELETE /offices/1
   def destroy
-    @office.destroy!
-
-    respond_to do |format|
-      format.html { redirect_to offices_path, notice: "Office was successfully destroyed.", status: :see_other }
-      format.json { head :no_content }
-    end
+    @office.destroy
+    redirect_to offices_url, notice: "Office was successfully destroyed."
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_office
-      @office = Office.find(params.expect(:id))
-    end
 
-    # Only allow a list of trusted parameters through.
-    def office_params
-      params.expect(office: [ :number, :employee_id ])
-    end
+  def set_office
+    @office = Office.find(params[:id])
+  end
+
+  def office_params
+    params.require(:office).permit(:number, :employee_id)
+  end
 end
+

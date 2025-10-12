@@ -1,12 +1,13 @@
 Employee.destroy_all
 Office.destroy_all
 
-for i in 1..5 do
+5.times do |i|
   employee = Employee.create!(
     name: Faker::Name.name
   )
-  office = Office.create!(
+  Office.create!(
     employee: employee,
-    number: (200+i).to_s
+    number: (200 + i + 1).to_s
   )
 end
+
