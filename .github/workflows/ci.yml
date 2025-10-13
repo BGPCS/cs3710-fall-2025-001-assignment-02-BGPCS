@@ -79,13 +79,10 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
-      - name: Set up database
-        env:
-          RAILS_ENV: test
-          DATABASE_URL: postgres://postgres:postgres@localhost:5432
+      - name: Rebuild native gems
         run: |
-          bin/bundle install
-          bin/rails db:create db:migrate
+          rm -rf vendor/bundle
+          bundle install --jobs 4 --retry 3
 
       - name: Run tests
         env:
