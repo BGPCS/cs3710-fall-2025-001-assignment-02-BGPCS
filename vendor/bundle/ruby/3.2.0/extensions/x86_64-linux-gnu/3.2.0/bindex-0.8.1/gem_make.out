@@ -3,16 +3,16 @@ current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignmen
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-ninzwy sitelibdir\=./.gem.20251012-18852-ninzwy clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-rmijg2 sitelibdir\=./.gem.20251012-22669-rmijg2 clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-ninzwy sitelibdir\=./.gem.20251012-18852-ninzwy
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-rmijg2 sitelibdir\=./.gem.20251012-22669-rmijg2
 compiling cruby.c
 linking shared-object skiptrace/internal/cruby.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-ninzwy sitelibdir\=./.gem.20251012-18852-ninzwy install
-/usr/bin/install -c -m 0755 cruby.so ./.gem.20251012-18852-ninzwy/skiptrace/internal
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-rmijg2 sitelibdir\=./.gem.20251012-22669-rmijg2 install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20251012-22669-rmijg2/skiptrace/internal
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-ninzwy sitelibdir\=./.gem.20251012-18852-ninzwy clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-rmijg2 sitelibdir\=./.gem.20251012-22669-rmijg2 clean

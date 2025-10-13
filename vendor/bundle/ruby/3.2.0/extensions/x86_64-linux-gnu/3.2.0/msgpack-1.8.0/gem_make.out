@@ -13,10 +13,10 @@ checking for whether -DSTR_UMINUS_DEDUPE_FROZEN=1 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/msgpack-1.8.0/ext/msgpack
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-ifhum sitelibdir\=./.gem.20251012-18852-ifhum clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-soioue sitelibdir\=./.gem.20251012-22669-soioue clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/msgpack-1.8.0/ext/msgpack
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-ifhum sitelibdir\=./.gem.20251012-18852-ifhum
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-soioue sitelibdir\=./.gem.20251012-22669-soioue
 compiling buffer.c
 compiling buffer_class.c
 compiling extension_value_class.c
@@ -32,8 +32,8 @@ compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/msgpack-1.8.0/ext/msgpack
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-ifhum sitelibdir\=./.gem.20251012-18852-ifhum install
-/usr/bin/install -c -m 0755 msgpack.so ./.gem.20251012-18852-ifhum/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-soioue sitelibdir\=./.gem.20251012-22669-soioue install
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20251012-22669-soioue/msgpack
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/msgpack-1.8.0/ext/msgpack
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-ifhum sitelibdir\=./.gem.20251012-18852-ifhum clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-soioue sitelibdir\=./.gem.20251012-22669-soioue clean

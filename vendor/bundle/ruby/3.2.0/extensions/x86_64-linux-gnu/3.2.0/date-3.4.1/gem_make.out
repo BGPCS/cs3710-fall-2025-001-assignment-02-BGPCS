@@ -6,10 +6,10 @@ checking for altzone in time.h with  -Werror... no
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-jieqsi sitelibdir\=./.gem.20251012-18852-jieqsi clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-vhman2 sitelibdir\=./.gem.20251012-22669-vhman2 clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-jieqsi sitelibdir\=./.gem.20251012-18852-jieqsi
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-vhman2 sitelibdir\=./.gem.20251012-22669-vhman2
 compiling date_core.c
 compiling date_parse.c
 compiling date_strftime.c
@@ -17,8 +17,8 @@ compiling date_strptime.c
 linking shared-object date_core.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-jieqsi sitelibdir\=./.gem.20251012-18852-jieqsi install
-/usr/bin/install -c -m 0755 date_core.so ./.gem.20251012-18852-jieqsi
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-vhman2 sitelibdir\=./.gem.20251012-22669-vhman2 install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20251012-22669-vhman2
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20251012-18852-jieqsi sitelibdir\=./.gem.20251012-18852-jieqsi clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-22669-vhman2 sitelibdir\=./.gem.20251012-22669-vhman2 clean
