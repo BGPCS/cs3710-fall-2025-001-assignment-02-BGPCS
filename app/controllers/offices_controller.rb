@@ -43,10 +43,11 @@ class OfficesController < ApplicationController
   def destroy
     @office.destroy!
     respond_to do |format|
-      format.html { redirect_to offices_url, notice: "Office was successfully destroyed" }
+      format.html { redirect_to offices_url, notice: "Office was successfully destroyed." }
       format.json { head :no_content }
     end
   end
+
 
 
   private
