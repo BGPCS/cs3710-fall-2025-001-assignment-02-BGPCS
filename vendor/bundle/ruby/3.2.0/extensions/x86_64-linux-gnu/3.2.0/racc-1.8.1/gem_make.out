@@ -3,16 +3,16 @@ current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignmen
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20251012-22669-q2y3ph sitelibdir\=./.gem.20251012-22669-q2y3ph clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-25393-gi566h sitelibdir\=./.gem.20251012-25393-gi566h clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20251012-22669-q2y3ph sitelibdir\=./.gem.20251012-22669-q2y3ph
+make DESTDIR\= sitearchdir\=./.gem.20251012-25393-gi566h sitelibdir\=./.gem.20251012-25393-gi566h
 compiling cparse.c
 linking shared-object racc/cparse.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20251012-22669-q2y3ph sitelibdir\=./.gem.20251012-22669-q2y3ph install
-/usr/bin/install -c -m 0755 cparse.so ./.gem.20251012-22669-q2y3ph/racc
+make DESTDIR\= sitearchdir\=./.gem.20251012-25393-gi566h sitelibdir\=./.gem.20251012-25393-gi566h install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20251012-25393-gi566h/racc
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20251012-22669-q2y3ph sitelibdir\=./.gem.20251012-22669-q2y3ph clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-25393-gi566h sitelibdir\=./.gem.20251012-25393-gi566h clean
