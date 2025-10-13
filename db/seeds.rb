@@ -10,4 +10,3 @@ Office.destroy_all
     number: (200 + i + 1).to_s
   )
 end
-

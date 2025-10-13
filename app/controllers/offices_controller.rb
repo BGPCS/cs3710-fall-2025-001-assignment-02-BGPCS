@@ -55,4 +55,3 @@ class OfficesController < ApplicationController
     params.require(:office).permit(:number, :employee_id)
   end
 end
-
