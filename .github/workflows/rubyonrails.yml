@@ -1,3 +1,4 @@
+# Ruby on Rails CI workflow
 name: "Ruby on Rails CI"
 
 on:
@@ -12,58 +13,71 @@ jobs:
 
     services:
       postgres:
-        image: postgres:15
+        image: postgres:14
         ports: ['5432:5432']
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: test_db
         options: >-
           --health-cmd="pg_isready -U postgres"
-          --health-interval=10s
+          --health-interval=5s
           --health-timeout=5s
           --health-retries=5
 
     env:
       RAILS_ENV: test
-      DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
-      PGHOST: localhost
-      PGUSER: postgres
-      PGPASSWORD: postgres
+      DATABASE_URL: "postgres://postgres:password@localhost:5432/test_db"
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Install Ruby and gems
-      - name: Install Ruby and gems
-        uses: ruby/setup-ruby@78c01b705fd9d5ad960d432d3a0cfa341d50e410 # v1.179.1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
+          ruby-version: 3.2.2
           bundler-cache: true
 
-      # Set up database schema safely for test environment
-      - name: Set up database schema
+      - name: Install dependencies
         run: |
-          bin/rails db:drop db:create db:schema:load RAILS_ENV=test
+          gem install bundler
+          bundle install --jobs 4 --retry 3
 
-      # Run tests
-      - name: Run tests
-        run: bin/rake
+      - name: Prepare database
+        run: |
+          bin/rails db:drop db:create db:migrate db:seed
+
+      - name: Run Rails tests
+        run: bin/rails test
 
   lint:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Install Ruby and gems
-        uses: ruby/setup-ruby@78c01b705fd9d5ad960d432d3a0cfa341d50e410 # v1.179.1
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
+          ruby-version: 3.2.2
           bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+
       - name: Generate binstubs
         run: bundle binstubs bundler-audit brakeman rubocop
+
       - name: Security audit dependencies
         run: bin/bundler-audit --update
+
       - name: Security audit application code
         run: bin/brakeman -q -w2
+
       - name: Lint Ruby files
         run: bin/rubocop --parallel
 
