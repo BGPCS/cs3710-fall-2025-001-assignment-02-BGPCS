@@ -23,18 +23,18 @@ checking for SSL_get1_peer_certificate() in openssl/ssl.h... yes
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/puma-7.0.4/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-s1wuim sitelibdir\=./.gem.20251012-25393-s1wuim clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-e0dvha sitelibdir\=./.gem.20251012-29821-e0dvha clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/puma-7.0.4/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-s1wuim sitelibdir\=./.gem.20251012-25393-s1wuim
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-e0dvha sitelibdir\=./.gem.20251012-29821-e0dvha
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/puma-7.0.4/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-s1wuim sitelibdir\=./.gem.20251012-25393-s1wuim install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20251012-25393-s1wuim/puma
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-e0dvha sitelibdir\=./.gem.20251012-29821-e0dvha install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20251012-29821-e0dvha/puma
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/puma-7.0.4/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-s1wuim sitelibdir\=./.gem.20251012-25393-s1wuim clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-e0dvha sitelibdir\=./.gem.20251012-29821-e0dvha clean

@@ -4,16 +4,16 @@ checking for rb_ext_ractor_safe() in ruby.h... yes
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/erb-5.1.1/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-41d9g0 sitelibdir\=./.gem.20251012-25393-41d9g0 clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-c6r159 sitelibdir\=./.gem.20251012-29821-c6r159 clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/erb-5.1.1/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-41d9g0 sitelibdir\=./.gem.20251012-25393-41d9g0
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-c6r159 sitelibdir\=./.gem.20251012-29821-c6r159
 compiling escape.c
 linking shared-object erb/escape.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/erb-5.1.1/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-41d9g0 sitelibdir\=./.gem.20251012-25393-41d9g0 install
-/usr/bin/install -c -m 0755 escape.so ./.gem.20251012-25393-41d9g0/erb
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-c6r159 sitelibdir\=./.gem.20251012-29821-c6r159 install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20251012-29821-c6r159/erb
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/erb-5.1.1/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-41d9g0 sitelibdir\=./.gem.20251012-25393-41d9g0 clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-c6r159 sitelibdir\=./.gem.20251012-29821-c6r159 clean

@@ -13,10 +13,10 @@ checking for whether -DSTR_UMINUS_DEDUPE_FROZEN=1 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/msgpack-1.8.0/ext/msgpack
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-ijuzl4 sitelibdir\=./.gem.20251012-25393-ijuzl4 clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-1zgfxz sitelibdir\=./.gem.20251012-29821-1zgfxz clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/msgpack-1.8.0/ext/msgpack
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-ijuzl4 sitelibdir\=./.gem.20251012-25393-ijuzl4
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-1zgfxz sitelibdir\=./.gem.20251012-29821-1zgfxz
 compiling buffer.c
 compiling buffer_class.c
 compiling extension_value_class.c
@@ -32,8 +32,8 @@ compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/msgpack-1.8.0/ext/msgpack
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-ijuzl4 sitelibdir\=./.gem.20251012-25393-ijuzl4 install
-/usr/bin/install -c -m 0755 msgpack.so ./.gem.20251012-25393-ijuzl4/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-1zgfxz sitelibdir\=./.gem.20251012-29821-1zgfxz install
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20251012-29821-1zgfxz/msgpack
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/msgpack-1.8.0/ext/msgpack
-make DESTDIR\= sitearchdir\=./.gem.20251012-25393-ijuzl4 sitelibdir\=./.gem.20251012-25393-ijuzl4 clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-29821-1zgfxz sitelibdir\=./.gem.20251012-29821-1zgfxz clean
