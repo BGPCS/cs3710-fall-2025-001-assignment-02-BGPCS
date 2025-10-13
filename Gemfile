@@ -16,7 +16,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
-gem "faker", "~> 2.21"
+gem "faker", "~> 3.5"
 gem "pg"
 gem "bootsnap", require: false
 
