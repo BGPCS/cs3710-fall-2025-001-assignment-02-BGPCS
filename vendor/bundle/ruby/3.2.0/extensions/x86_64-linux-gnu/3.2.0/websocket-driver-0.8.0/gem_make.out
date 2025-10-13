@@ -3,16 +3,16 @@ current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignmen
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-o5dxvj sitelibdir\=./.gem.20251012-29821-o5dxvj clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-fwk9xw sitelibdir\=./.gem.20251012-34651-fwk9xw clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-o5dxvj sitelibdir\=./.gem.20251012-29821-o5dxvj
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-fwk9xw sitelibdir\=./.gem.20251012-34651-fwk9xw
 compiling websocket_mask.c
 linking shared-object websocket_mask.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-o5dxvj sitelibdir\=./.gem.20251012-29821-o5dxvj install
-/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20251012-29821-o5dxvj
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-fwk9xw sitelibdir\=./.gem.20251012-34651-fwk9xw install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20251012-34651-fwk9xw
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-o5dxvj sitelibdir\=./.gem.20251012-29821-o5dxvj clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-fwk9xw sitelibdir\=./.gem.20251012-34651-fwk9xw clean

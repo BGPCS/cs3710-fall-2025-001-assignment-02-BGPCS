@@ -16,16 +16,16 @@ checking for ttyname_r()... yes
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-enkms2 sitelibdir\=./.gem.20251012-29821-enkms2 clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-mldj1k sitelibdir\=./.gem.20251012-34651-mldj1k clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-enkms2 sitelibdir\=./.gem.20251012-29821-enkms2
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-mldj1k sitelibdir\=./.gem.20251012-34651-mldj1k
 compiling console.c
 linking shared-object io/console.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-enkms2 sitelibdir\=./.gem.20251012-29821-enkms2 install
-/usr/bin/install -c -m 0755 console.so ./.gem.20251012-29821-enkms2/io
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-mldj1k sitelibdir\=./.gem.20251012-34651-mldj1k install
+/usr/bin/install -c -m 0755 console.so ./.gem.20251012-34651-mldj1k/io
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-enkms2 sitelibdir\=./.gem.20251012-29821-enkms2 clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-mldj1k sitelibdir\=./.gem.20251012-34651-mldj1k clean

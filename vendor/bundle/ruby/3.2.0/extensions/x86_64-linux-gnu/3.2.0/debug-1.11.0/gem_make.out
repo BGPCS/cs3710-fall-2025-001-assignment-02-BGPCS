@@ -3,17 +3,17 @@ current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignmen
 creating Makefile
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-ma7uj7 sitelibdir\=./.gem.20251012-29821-ma7uj7 clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-wdsley sitelibdir\=./.gem.20251012-34651-wdsley clean
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-ma7uj7 sitelibdir\=./.gem.20251012-29821-ma7uj7
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-wdsley sitelibdir\=./.gem.20251012-34651-wdsley
 compiling debug.c
 compiling iseq_collector.c
 linking shared-object debug/debug.so
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-ma7uj7 sitelibdir\=./.gem.20251012-29821-ma7uj7 install
-/usr/bin/install -c -m 0755 debug.so ./.gem.20251012-29821-ma7uj7/debug
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-wdsley sitelibdir\=./.gem.20251012-34651-wdsley install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20251012-34651-wdsley/debug
 
 current directory: /home/elvesjd/Documents/GitHub/cs3710-fall-2025-001-assignment-02-BGPCS/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20251012-29821-ma7uj7 sitelibdir\=./.gem.20251012-29821-ma7uj7 clean
+make DESTDIR\= sitearchdir\=./.gem.20251012-34651-wdsley sitelibdir\=./.gem.20251012-34651-wdsley clean
